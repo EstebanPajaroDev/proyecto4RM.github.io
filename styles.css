@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(227, 227, 227);
+  width: 60%;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid rgb(18, 18, 18);
+  border-radius: 30px;
+  margin-top: 2vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(131, 131, 131);
+  font-weight: 400;
+}
+
+.changelog-container {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 27.87%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(12, 161, 64);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-date {
+  width: 25%;
+  text-align: right;
+  padding-right: 40px;
+  color: rgb(131, 131, 131);
+  font-size: 1rem;
+}
+
+.timeline-content {
+  width: 70%;
+  padding-left: 40px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 28%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.1s ease-in-out;
+}
+.timeline-item:hover::before {
+  background-color: rgb(61, 8, 187);
+  scale: 1.2;
+}
+
+.changelog-button {
+  display: block;
+  width: 60%;
+  margin: 40px auto 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.changelog-button:hover {
+  background-color: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(131, 131, 131);
+  margin: 2.5vh;
+}
