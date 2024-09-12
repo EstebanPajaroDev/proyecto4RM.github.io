@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: rgb(227, 227, 227);
-  width: 60%;
+  background-color: rgba(239, 239, 239, 0.91);
+  width: 70%;
   margin: auto;
   padding: 5px;
   border: 3px solid rgb(18, 18, 18);
@@ -126,4 +126,51 @@ footer {
   font-size: 1rem;
   color: rgb(131, 131, 131);
   margin: 2.5vh;
+}
+@media screen and (max-width: 670px) {
+  body {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 410px) {
+  body {
+    width: 100%;
+    border: none;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  .changelog-button {
+    width: 90%;
+    margin: 30px auto 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 270px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 0.5rem;
+  }
+  .timeline-date {
+    font-size: 0.5rem;
+    width: 30%;
+  }
+  .timeline-content {
+    font-size: 0.7rem;
+  }
+  .changelog-button {
+    width: 90%;
+    margin: 30px auto 0;
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+  footer {
+    font-size: 0.5rem;
+  }
 }
